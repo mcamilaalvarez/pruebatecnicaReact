@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.card-container{
+ text-align: center;
+}
+.main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+.cards{
+  
+  height: calc(100%/2-10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin:40px 0;
+  justify-content: space-between;
+}
+.card{
+  width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  
+}
+.card:hover{
+  transform: translateY(-15px)
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.details{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.img{
+  height: 150px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 80%;
+  object-fit: cover;
+}
+.card-title{
+  color:black;
+  font-size: 30px;
+  font-weight: 400;
+
+}
+
+.card-text{
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
+}
+img{
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 5%;
+}
+.card-body{
+  text-align: justify;
+}
+.card-subtitle{
+  color:black;
+  font-size: 20px;
+  font-weight: 300;
+}
+.imagen{
+  align-items: center;
+}
+.paginationButton{
+  width: 100%;
+  height:40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationButton a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #FF676D;
+  color: #FF676D;
+  cursor: pointer;
+}
+.paginationButton a:hover{
+  color:white;
+  background-color:#FF676D;
+
+}
+.paginationActive a {
+  color:white;
+    background-color:#FF676D;
+
+}
+
